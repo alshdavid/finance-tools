@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "build": "node ./build.ts",
-    "serve": "npx http-server-rs --spa --watch ./dist",
+    "serve": "npx http-server-rs --watch ./dist",
     "watch": "npx nodemon"
   },
   "nodemonConfig": {
@@ -22,14 +22,18 @@
   },
   "devDependencies": {
     "@types/node": "^24.1.0",
+    "@types/react": "^19.1.8",
     "ejs": "^3.1.10",
     "esbuild": "^0.25.8",
     "esbuild-sass-plugin": "^3.3.1",
+    "http-server-rs": "^0.0.5",
     "nodemon": "^3.1.10",
     "preact": "^10.26.9",
     "prettier": "^3.6.2",
     "sass": "^1.89.2",
-    "typescript": "^5.8.3",
-    "http-server-rs": "^0.0.5"
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.0"
   }
 }

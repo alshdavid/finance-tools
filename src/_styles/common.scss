@@ -1,17 +1,12 @@
 @use "./mixins.scss" as *;
 
 .content-max-width {
-  padding: 0 3%;
+  margin: 0 1%;
 
   @include desktop {
     max-width: var(--responsive-width);
     margin: 0 auto;
-    padding: 0;
   }
-}
-
-body {
-  margin: var(--spacing-14) 0;
 }
 
 #root {

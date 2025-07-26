@@ -1,7 +1,0 @@
-export * from '../platform/router/index.ts'
-export * from '../platform/mount/index.ts'
-export * from '../platform/history/index.ts'
-export * from '../platform/locator/index.ts'
-export * from '../platform/shared-state/index.ts'
-export * from './create.ts'
-export * from './group.ts'

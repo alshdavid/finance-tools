@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <%- await include('./partials/header.partial.ejs') %>
+  <title>Finance Tools</title>
+  <%- await include('./_partials/header.partial.ejs') %>
+  <link rel="stylesheet" href="<%- ctx.styles.include('./global.scss') %>">
 </head>
 <body class="page-home">
-  <div id="root"></div>
+  <ul>
+    <li><a href="retirement">Retirement Fund Calculator</a></li>
+  </ul>
 </body>
 </html>

@@ -1,0 +1,99 @@
+.top {
+  display: flex;
+  flex-flow: row wrap;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+
+  .chart-container {
+    flex: 1;
+  }
+
+  form {
+    display: table;
+    width: 230px;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    input {
+      border: none;
+      background: #fafafa;
+      text-align: right;
+    }
+
+    header {
+      color: white;
+      background-color: black;
+      line-height: 36px;
+      overflow-x: visible;
+      border: 1px black solid !important;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        width: var(--spacing-02);
+      }
+
+      &:after {
+        content: "";
+        display: table-cell;
+        background-color: black;
+      }
+    }
+
+    span {
+      border-right: 1px solid grey;
+    }
+
+    span,
+    header {
+      font-size: 14px;
+
+      &:first-child {
+        padding-left: var(--spacing-02);
+      }
+    }
+
+    label,
+    header {
+      display: table-row;
+      height: 36px;
+      border: 1px grey solid;
+      border-left: none;
+
+      > * {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.bottom {
+  td, th {
+    text-align: right;
+    padding-left: var(--spacing-02);
+  }
+
+  th {
+    background-color: black;
+    color: white;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  .green {
+    background-color: var(--color-green-100);
+  }
+
+  .red {
+    background-color: var(--color-red-100);
+
+  }
+}
