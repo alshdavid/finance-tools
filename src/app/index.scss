@@ -1,0 +1,92 @@
+.page-home {
+  header {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-05);
+
+    h1 {
+      small {
+        display: block;
+      }
+    }
+    
+    .link-github {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+  
+      img {
+        height: 30px;
+        margin-left: var(--spacing-02);
+      }
+    }
+  }
+
+  .description {
+    margin-bottom: var(--spacing-10);
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 26px;
+    margin: 0 0 var(--spacing-06) 0;
+  }
+
+  h3 {
+    font-size: 22px;
+    margin: var(--spacing-06) 0;
+  }
+
+  i {
+    display: block;
+    margin: var(--spacing-04) 0;
+    font-size: 14px;
+  }
+
+  .notice {
+    display: block;
+    background-color: var(--color-blue-50);
+    padding: var(--spacing-03) var(--spacing-06);
+    border: solid 2px var(--color-blue-100);
+    border-radius: 8px;
+    margin-top: var(--spacing-04);
+  }
+
+  .notice-center {
+    display: block;
+    border-top: 1px solid var(--color-grey-300);
+    border-bottom: 1px solid var(--color-grey-300);
+    text-align: center;
+    margin: var(--spacing-10) 0;
+    padding: var(--spacing-06) 10%;
+    transition: background-color 0.15s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+      background-color: var(--color-grey-100);
+      cursor: pointer;
+    }
+  }
+
+  .submit {
+    padding-top: var(--spacing-04);
+    margin-bottom: var(--spacing-04);
+
+    button, a {
+      margin-right: var(--spacing-02);
+    }
+  }
+
+  .results-formatted {
+    .records {
+      font-size: 14px;
+      // .row {
+      //   display: flex;
+      // }
+    }
+  }
+}

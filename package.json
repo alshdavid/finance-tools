@@ -1,0 +1,35 @@
+{
+  "name": "@alshdavid/statement-converter",
+  "type": "module",
+  "scripts": {
+    "build": "node ./build.ts",
+    "serve": "npx http-server-rs --spa --watch ./dist",
+    "watch": "npx nodemon"
+  },
+  "nodemonConfig": {
+    "delay": 250,
+    "exec": "npm run build",
+    "ext": "*",
+    "ignore": [
+      "**/node_modules/**",
+      "**/.git/**",
+      "**/dist/**"
+    ],
+    "signal": "SIGTERM",
+    "watch": [
+      "src/**/*"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "ejs": "^3.1.10",
+    "esbuild": "^0.25.8",
+    "esbuild-sass-plugin": "^3.3.1",
+    "nodemon": "^3.1.10",
+    "preact": "^10.26.9",
+    "prettier": "^3.6.2",
+    "sass": "^1.89.2",
+    "typescript": "^5.8.3",
+    "http-server-rs": "^0.0.5"
+  }
+}
